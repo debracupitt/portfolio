@@ -1,0 +1,329 @@
+html {
+  font-size: 16px;
+}
+
+/* Display */
+body {
+  max-width: 100%;
+}
+
+.container {
+  padding: 7rem 7rem 1rem 7rem;
+}
+
+.container2 {
+  padding: 2.5rem 7rem 1rem 7rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.center-items {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-spacebtwn {
+  justify-content: space-between;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+}
+
+/* Fonts */
+.logo a, h1, h2, h5 {
+  font-family: 'Source Serif Pro', serif;
+  color: black;
+}
+
+h3, h4, h6, p, li, li div, .button, .nav a {
+  font-family: 'Oxygen', sans-serif;
+  color: black;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 3rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 900;
+  line-height: 2rem;
+  box-shadow: inset 0 -11px 0 #0DAB8C;
+  display: inline-block;
+  margin: 1rem 0;
+
+}
+
+h3 {
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+
+h4 {
+  color: #0DAB8C;
+  font-weight: 300;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+p {
+  line-height: 1.5rem;
+  margin: 0.5rem 0;
+  font-weight: 300;
+}
+
+li {
+  line-height: 1.2rem;
+  margin: 0.7rem 0;
+}
+
+li div {
+  font-size: 0.9rem;
+}
+
+.date {
+  color: #757575;
+  font-weight: 300;
+}
+
+.role {
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  background-color: #fff;
+  width: 100%;
+  padding: 1.5rem 0 0.5rem 3rem;
+  z-index: 20;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: black;
+  display: inline-block;
+}
+
+.logo a {
+  text-decoration: none;
+  padding-left: 8px;
+}
+
+.nav {
+  float: right;
+  display: inline-block;
+  margin-right: 6.5rem;
+}
+
+@@media query {
+
+}
+
+.nav span {
+  display: inline-block;
+  padding: 5px 8px;
+}
+
+.nav a {
+  text-decoration: none;
+  border-bottom: 3px solid #0DAB8C;
+  box-shadow: inset 0 -5px 0 #11E3BA;
+  transition: background-color 1s ease;
+  padding: 2px 3px 0 3px;
+}
+
+.nav a:hover, nav a:active {
+  border-bottom: 3px solid #0DAB8C;
+  background: #11E3BA;
+}
+
+.nav a:active {
+  color: #0DAB8C;
+  transition-duration: 200ms;
+}
+
+/* Profile */
+
+header {
+  padding-top: 2rem;
+}
+
+.profile-image {
+  width: 30%;
+}
+
+.profile {
+  width: 60%;
+}
+
+#profile-image {
+  border-radius: 50%;
+  box-shadow: 0 2px 26px 0 rgba(0,0,0,0.4);
+  width: 100%;
+  max-width: 300px;
+  filter: grayscale(100%);
+}
+
+.green {
+  color: #0DAB8C;
+}
+
+/* About */
+
+.about {
+  width: 50%;
+}
+
+.history {
+  width: 35%;
+}
+
+.button {
+  padding: 10px;
+  background-color: #0DAB8C;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  display: inline-block;
+  margin-top: 1.4rem;
+}
+
+.button:hover {
+  background-color: #11E3BA;
+  transition-duration: 300ms;
+  cursor: pointer;
+}
+
+/*Skills*/
+.skill div {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.skill img {
+  max-width: 240px;
+  min-width: 140px;
+}
+
+/*Work*/
+.work h4 {
+  padding: 2.5rem 0;
+}
+
+.worktitle {
+  background-color: #11E3BA;
+  padding: 4px;
+  font-weight: bold;
+}
+
+.dev1,
+.dev2,
+.dev3 {
+  background-position: cover;
+  background-size: 100%;
+  width: 30%;
+  height: 14rem;
+  box-shadow: 0 2px 26px 0 rgba(0,0,0,0.4);
+}
+
+.dev1:hover,
+.dev2:hover,
+.dev3:hover {
+  transition: 200ms;
+  cursor: pointer;
+}
+
+.dev1 {
+  background-image: url("../images/colmaracademy1.png");
+}
+
+.dev1:hover {
+  background-image: url("../images/colmaracademy2.png");
+}
+
+.dev2 {
+  background-image: url("../images/tortoiseshell1.png");
+}
+
+.dev2:hover {
+  background-image: url("../images/tortoiseshell2.png");
+}
+
+.dev3 {
+  background-image: url("../images/secretagent1.png");
+}
+
+.dev3:hover {
+  background-image: url("../images/secretagent2.png");
+}
+
+.case1 {
+  background-position: cover;
+  background-size: 100%;
+  height: 20rem;
+  box-shadow: 0 2px 26px 0 rgba(0,0,0,0.4);
+}
+
+.case1 {
+  background-image: url("../images/carbontrack1.png");
+}
+
+/*Writing*/
+.article {
+  padding: 1rem 0.5rem;
+  width: 30%;
+}
+
+.article h5:hover {
+  color: #0DAB8C;
+  transition: 200ms;
+}
+
+/*Contact*/
+.contact {
+  padding-bottom: 8rem;
+}
+
+.contact a {
+  box-shadow: inset 0 -5px 0 #11E3BA;
+  color: black;
+}
+
+.contact a:hover {
+  background-color: #11E3BA;
+  transition: background-color 1s ease;
+}
