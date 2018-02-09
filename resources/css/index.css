@@ -149,10 +149,6 @@ nav {
   margin-right: 6.5rem;
 }
 
-@@media query {
-
-}
-
 .nav span {
   display: inline-block;
   padding: 5px 8px;
@@ -166,7 +162,7 @@ nav {
   padding: 2px 3px 0 3px;
 }
 
-.nav a:hover, nav a:active {
+.nav a:hover {
   border-bottom: 3px solid #0DAB8C;
   background: #11E3BA;
 }
@@ -193,7 +189,6 @@ header {
 #profile-image {
   border-radius: 50%;
   box-shadow: 0 2px 26px 0 rgba(0,0,0,0.4);
-  width: 100%;
   max-width: 300px;
   filter: grayscale(100%);
 }
@@ -240,7 +235,7 @@ header {
 }
 
 /*Work*/
-.work h4 {
+.work {
   padding: 2.5rem 0;
 }
 
@@ -256,7 +251,7 @@ header {
   background-position: cover;
   background-size: 100%;
   width: 30%;
-  height: 14rem;
+  height: 13rem;
   box-shadow: 0 2px 26px 0 rgba(0,0,0,0.4);
 }
 
@@ -294,18 +289,19 @@ header {
 .case1 {
   background-position: cover;
   background-size: 100%;
-  height: 20rem;
+  height: 18rem;
   box-shadow: 0 2px 26px 0 rgba(0,0,0,0.4);
+  background-image: url("../images/carbontrack1.png");
 }
 
-.case1 {
-  background-image: url("../images/carbontrack1.png");
+.case1 h3 {
+  text-align: center;
 }
 
 /*Writing*/
 .article {
-  padding: 1rem 0.5rem;
-  width: 30%;
+  padding: 1rem 2rem 1rem 0;
+  width: 45%;
 }
 
 .article h5:hover {
@@ -326,4 +322,196 @@ header {
 .contact a:hover {
   background-color: #11E3BA;
   transition: background-color 1s ease;
+}
+
+/*Media Queries*/
+@media only screen and (min-width: 864px) {
+  /* Tablet 864px + */
+  .mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 863px) and (min-width: 768px) {
+  /* Tablet 863px - 768px */
+  h1 {
+    font-size: 1.75rem;
+  }
+  h2, .logo {
+    font-size: 1.3rem;
+  }
+  h2 {
+    box-shadow: inset 0 -13px 0 #0DAB8C;
+  }
+  h3, {
+    font-size: 1.1rem;
+  }
+  .nav a {
+    font-size: 1rem;
+    box-shadow: inset 0 -6px 0 #11E3BA;
+  }
+  p {
+    font-size: 14px;
+  }
+  header {
+    flex-direction: column;
+  }
+  .container {
+    padding: 5rem 4rem 1rem 4rem;
+  }
+  .container2 {
+    padding: 2rem 4rem 1rem 4rem;
+  }
+  .profile-image {
+    width: 45%;
+  }
+  .profile {
+    width: 70%;
+  }
+  .dev1,
+  .dev2,
+  .dev3 {
+    width: 45%;
+    height: 12rem;
+    margin: auto;
+  }
+  .dev3 {
+    margin-top: 2.5rem;
+  }
+  .case1 {
+    height: 14rem;
+  }
+  .article {
+    width: 45%;
+    margin: auto;
+  }
+  .mobile {
+    display: none;
+  }
+  .writing {
+    align-items: flex-start;
+  }
+  .contact {
+    padding-bottom: 4rem;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  /* Mobile less than 768px */
+  .about-section, header {
+    flex-direction: column;
+  }
+  .desktop {
+    display: none;
+  }
+  h1 {
+    font-size: 1.75rem;
+    line-height: 2rem;
+    text-align: center;
+    margin-top: 0.7rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    width: 28%;
+    margin: auto;
+    text-align: center;
+  }
+  h3 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  h4 {
+    text-align: center;
+    margin: auto;
+  }
+  p {
+    font-size: 14px;
+  }
+  li div {
+    text-align: center;
+  }
+  .nav a {
+    font-size: 1rem;
+    box-shadow: inset 0 -7px 0 #11E3BA;
+  }
+  .logo img {
+    max-width: 35px;
+  }
+  .container {
+    padding: 1rem;
+  }
+  .container2 {
+    padding: 1.5rem 2rem 1rem 2rem;
+  }
+  header {
+    padding-top: 5rem;
+  }
+  .nav {
+    margin-right: 3.5rem;
+  }
+  .profile-image {
+    width: 65%;
+    text-align: center;
+  }
+  #profile-image {
+  }
+  .profile, .work, .contact {
+    width: 80%;
+  }
+  /*About*/
+  #about, #work, #contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about, .history, .contact {
+    margin: auto;
+    align-items: center;
+    padding-top: 0.5rem;
+  }
+  .about {
+    width: 85%;
+  }
+  .history {
+    width: 70%;
+  }
+  .button {
+    margin-bottom: 1.5rem;
+  }
+  .history h4 {
+    padding: 1rem 0;
+  }
+  .work {
+    padding: 2.5rem 0;
+  }
+  .dev1,
+  .dev2,
+  .dev3 {
+    width: 80%;
+    height: 11rem;
+    margin: auto;
+  }
+  .dev2,
+  .dev3 {
+    margin-top: 2rem;
+  }
+  .dev1 {
+    margin-top: 0.5rem;
+  }
+  .case1 {
+    height: 10rem;
+  }
+  .article {
+    width: 80%;
+    margin: auto;
+    padding: 0 0 2rem 0;
+  }
+  .mobile {
+    display: inline-block;
+  }
+  .contact {
+    padding-bottom: 3rem;
+  }
 }
