@@ -334,6 +334,9 @@ header {
 
 @media only screen and (max-width: 863px) and (min-width: 768px) {
   /* Tablet 863px - 768px */
+  .mobile {
+    display: none;
+  }
   h1 {
     font-size: 1.75rem;
   }
@@ -385,9 +388,6 @@ header {
     width: 45%;
     margin: auto;
   }
-  .mobile {
-    display: none;
-  }
   .writing {
     align-items: flex-start;
   }
@@ -399,11 +399,11 @@ header {
 
 @media only screen and (max-width: 768px) {
   /* Mobile less than 768px */
-  .about-section, header {
-    flex-direction: column;
-  }
   .desktop {
     display: none;
+  }
+  .about-section, header {
+    flex-direction: column;
   }
   h1 {
     font-size: 1.75rem;
