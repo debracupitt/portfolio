@@ -1,0 +1,671 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Main CSS Code*/
+html {
+  font-size: 16px;
+}
+
+/* Display */
+body {
+  max-width: 100%;
+}
+
+::-moz-selection {
+  background: #e19dd0;
+}
+
+::selection {
+  background: #e19dd0;
+}
+
+.container {
+  padding: 7rem 7rem 1rem 7rem;
+}
+
+.container2 {
+  padding: 2.5rem 7rem 1rem 7rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.center-items {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-spacebtwn {
+  justify-content: space-between;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.wrap {
+  flex-wrap: wrap;
+}
+
+.bold {
+  font-weight: 800;
+}
+
+img {
+  width: 100%;
+}
+
+/* Fonts */
+.logo a,
+h1,
+h2,
+h5 {
+  font-family: "Source Serif Pro", serif;
+  color: #000000;
+}
+
+h3,
+h4,
+h6,
+p,
+li,
+li div,
+.button,
+.nav a {
+  font-family: "Oxygen", sans-serif;
+  color: #000000;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 3rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 900;
+  line-height: 2rem;
+  box-shadow: inset 0 -11px 0 #0dab8c;
+  display: inline-block;
+  margin: 1rem 0;
+}
+
+h3 {
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  font-weight: 300;
+}
+
+h4 {
+  color: #0dab8c;
+  font-weight: 300;
+}
+
+h5 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+p {
+  line-height: 1.5rem;
+  margin: 0.5rem 0;
+  font-weight: 300;
+}
+
+li {
+  line-height: 1.2rem;
+  margin: 0.7rem 0;
+}
+
+li div {
+  font-size: 0.9rem;
+}
+
+.date {
+  color: #757575;
+  font-weight: 300;
+}
+
+.role {
+  font-weight: 800;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 1.5rem 0 0.5rem 3rem;
+  z-index: 3;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #000000;
+  display: inline-block;
+}
+
+.logo a {
+  text-decoration: none;
+  padding-left: 8px;
+}
+
+.nav {
+  float: right;
+  display: inline-block;
+  margin-right: 6.5rem;
+}
+
+.nav span {
+  display: inline-block;
+  padding: 5px 8px;
+}
+
+.nav a {
+  text-decoration: none;
+  border-bottom: 3px solid #0dab8c;
+  box-shadow: inset 0 -5px 0 #11e3ba;
+  transition: background-color 1s ease;
+  padding: 2px 3px 0 3px;
+}
+
+.nav a:hover {
+  border-bottom: 3px solid #0dab8c;
+  background: #11e3ba;
+}
+
+.nav a:active {
+  color: #0dab8c;
+  transition-duration: 200ms;
+}
+
+/* Profile */
+header {
+  padding-top: 2rem;
+}
+
+.profile-image {
+  width: 30%;
+}
+
+.profile {
+  width: 60%;
+}
+
+#profile-image {
+  border-radius: 50%;
+  box-shadow: 0 5px 14px 2px rgba(0, 0, 0, 0.4);
+  max-width: 300px;
+  filter: grayscale(100%);
+}
+
+.green {
+  color: #0dab8c;
+}
+
+/* About */
+.about {
+  width: 50%;
+}
+
+.history {
+  width: 35%;
+}
+
+.button {
+  padding: 10px;
+  background-color: #0dab8c;
+  color: #ffffff;
+  font-weight: 800;
+  text-align: center;
+  display: inline-block;
+  margin-top: 1.4rem;
+}
+
+.button:hover {
+  background-color: #11e3ba;
+  transition-duration: 300ms;
+  cursor: pointer;
+}
+
+/*Skills*/
+.skill div {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.skill img {
+  max-width: 240px;
+  min-width: 140px;
+}
+
+/*Work*/
+.work {
+  padding: 2.5rem 0;
+}
+
+/*Writing*/
+.article {
+  padding: 1rem 2rem 1rem 0;
+  width: 45%;
+}
+
+.article h5:hover {
+  color: #0dab8c;
+  transition: 200ms;
+}
+
+/*Contact*/
+.contact {
+  padding-bottom: 8rem;
+}
+
+.contact a {
+  box-shadow: inset 0 -5px 0 #11e3ba;
+  color: #000000;
+}
+
+.contact a:hover {
+  background-color: #11e3ba;
+  transition: background-color 1s ease;
+}
+
+.card-small {
+  width: 30%;
+  height: 12rem;
+}
+
+.card-big {
+  width: 100%;
+  height: 20rem;
+}
+
+.card {
+  position: relative;
+  box-shadow: 0 5px 14px 2px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  text-align: center;
+}
+
+.card img {
+  position: absolute;
+  height: auto;
+  width: 150%;
+  left: -10%;
+  top: 0;
+}
+
+.card img:hover {
+  opacity: 1;
+}
+
+.card .content-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.card .title {
+  position: absolute;
+  text-align: center;
+  width: 70%;
+  padding-left: 15%;
+  padding-right: 15%;
+  top: 40%;
+}
+
+.card .title h3 {
+  background-color: #11e3ba;
+  font-weight: 800;
+  padding: 4px;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card:hover .content-overlay {
+  opacity: 0;
+}
+
+@media only screen and (max-width: 863px) and (min-width: 768px) {
+  .card-small {
+    width: 45%;
+    height: 12rem;
+    margin: 1rem auto;
+  }
+  .card-big {
+    height: 14rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .card-small,
+  .card-big {
+    width: 80%;
+    height: 11rem;
+    margin: 1rem auto;
+  }
+}
+
+/*Media Queries*/
+@media only screen and (min-width: 864px) {
+  /* Tablet 864px + */
+  .mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 863px) and (min-width: 768px) {
+  /* Tablet 863px - 768px */
+  .mobile {
+    display: none;
+  }
+  h1 {
+    font-size: 1.75rem;
+  }
+  h2,
+  .logo {
+    font-size: 1.3rem;
+  }
+  h2 {
+    box-shadow: inset 0 -13px 0 #0dab8c;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+  .nav a {
+    font-size: 1rem;
+    box-shadow: inset 0 -6px 0 #11e3ba;
+  }
+  p {
+    font-size: 14px;
+  }
+  header {
+    flex-direction: column;
+  }
+  .container {
+    padding: 5rem 4rem 1rem 4rem;
+  }
+  .container2 {
+    padding: 2rem 4rem 1rem 4rem;
+  }
+  .profile-image {
+    width: 45%;
+  }
+  .profile {
+    width: 70%;
+  }
+  .article {
+    width: 45%;
+    margin: auto;
+  }
+  .writing {
+    align-items: flex-start;
+  }
+  .contact {
+    padding-bottom: 4rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Mobile less than 768px */
+  .desktop {
+    display: none;
+  }
+  .about-section,
+  header {
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 1.75rem;
+    line-height: 2rem;
+    text-align: center;
+    margin-top: 0.7rem;
+  }
+  h2 {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+    width: 28%;
+    margin: auto;
+    text-align: center;
+  }
+  h3 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+  h4 {
+    text-align: center;
+    margin: auto;
+  }
+  p {
+    font-size: 14px;
+  }
+  li div {
+    text-align: center;
+  }
+  .nav a {
+    font-size: 1rem;
+    box-shadow: inset 0 -7px 0 #11e3ba;
+  }
+  .logo img {
+    max-width: 35px;
+  }
+  .container {
+    padding: 1rem;
+  }
+  .container2 {
+    padding: 1.5rem 2rem 1rem 2rem;
+  }
+  header {
+    padding-top: 5rem;
+  }
+  .nav {
+    margin-right: 3.5rem;
+  }
+  .profile-image {
+    width: 65%;
+    text-align: center;
+  }
+  .profile,
+  .work,
+  .contact {
+    width: 80%;
+  }
+  /*About*/
+  #about,
+  #work,
+  #contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about,
+  .history,
+  .contact {
+    margin: auto;
+    align-items: center;
+    padding-top: 0.5rem;
+  }
+  .about {
+    width: 85%;
+  }
+  .history {
+    width: 70%;
+  }
+  .button {
+    margin-bottom: 1.5rem;
+  }
+  .history h4 {
+    padding: 1rem 0;
+  }
+  .work {
+    padding: 2.5rem 0;
+  }
+  .article {
+    width: 80%;
+    margin: auto;
+    padding: 0 0 2rem 0;
+  }
+  .mobile {
+    display: inline-block;
+  }
+  .contact {
+    padding-bottom: 3rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

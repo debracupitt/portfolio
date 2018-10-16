@@ -3,11 +3,9 @@
 <head>
   <title>Debra Cupitt</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700|Source+Serif+Pro:400,600,700" rel="stylesheet">
-  <link href="./resources/css/reset.css" type="text/css" rel="stylesheet">
-  <link href="./resources/css/index.css" type="text/css" rel="stylesheet">
-  <link rel="shortcut icon" href="./resources/images/favicon.png" type="image/x-icon">
-  <link rel="icon" href="./resources/images/favicon.png" type="image/x-icon">
+  <link href="./resources/css/main.css" type="text/css" rel="stylesheet">
+  <link rel="shortcut icon" href="./resources/images/favicon2.png" type="image/x-icon">
+  <link rel="icon" href="./resources/images/favicon2.png" type="image/x-icon">
 </head>
 
 <body>
@@ -16,7 +14,7 @@
 <nav role="navigation">
   <div class="logo">
     <span class="desktop"><a href="#">Debra Cupitt</a></span>
-    <span class="mobile"><a href="#"><img src="./resources/images/favicon.png"></img></a></span>
+    <span class="mobile"><a href="#"><img src="./resources/images/favicon.svg"></img></a></span>
   </div>
   <div class="nav">
     <span><a href="#about">About</a></span>
@@ -33,7 +31,7 @@
     </div>
     <div class="profile">
       <h1>User experience designer & web developer.</h1></br>
-      <h3>I focus on <span class="green">social and environmental good</span> & significant problems, but above all — <span class="green">impact.</span></h3>
+      <h3>I focus on tackling <span class="green">social and environmental</span> challenges & creating <span class="green">positive impact.</span></h3>
     </div>
   </header>
 </div>
@@ -43,8 +41,8 @@
   <h2>About Me</h2>
   <div class="flex justify-spacebtwn about-section">
     <div class="about flex column">
-      <p>I believe in the power of business to drive positive change in the world. This led me to study (and complete) my Masters of International Development and my Bachelors of Educational Studies.</p>
-      <p>I am curious about everything. I'm always asking questions, and I find all subjects and topics fascinating. I never do anything halfway or halfheartedly, I approach it with zest, enthusiasm, and determination.</p>
+      <p>I believe in the power of people to drive positive change in the world. This led me to study (and complete) my Masters of International Development and my Bachelors of Educational Studies.</p>
+      <p>I am very curious and love learning. I'm always asking questions, and I find many subjects and topics fascinating. I never do anything halfway or halfheartedly, I approach challenges with zest, enthusiasm, and determination.</p>
       <p>Thinking of new ways to do things is a crucial part of who I am. I'm never content with doing something the conventional way if a better way is possible.</p>
       <p>I am passionate about using my knowledge and skills to help organisations and businesses operate and grow in a sustainable and socially and environmentally responsible way. I aspire to co-create an equitable and inclusive world.</p>
       <a href="./resources/files/debra-cupitt-resume.pdf" target="_blank"><div class="button">Download Resume</div></a>
@@ -85,37 +83,59 @@
 
   <!--Work Section-->
 <div class="container2" id="work">
-    <h2>Work</h2>
+  <h2>Work</h2>
 
   <!--Web Development-->
+  <div>
     <h4 class="work">WEB DEVELOPMENT</h4>
     <div class="web flex wrap justify-spacebtwn">
-      <a class="dev1 flex center-items justify-center" href="https://dcupitt.github.io/colmaracademy/" target="_blank">
-        <div>
-          <h3 class="worktitle">Colmar Academy</h3>
-        </div>
-      </a>
-      <a class="dev2 flex center-items justify-center" href="https://dcupitt.github.io/Tortoiseshell/" target="_blank">
-        <div>
-          <h3 class="worktitle">Tortoiseshell</h3>
-        </div>
-      </a>
-      <a class="dev3 flex center-items justify-center" href="https://dcupitt.github.io/secretagent/" target="_blank">
-        <div>
-          <h3 class="worktitle">Secret Agent</h3>
-        </div>
-      </a>
-    </div>
-
-  <!--User Experience-->
-    <h4 class="work">USER EXPERIENCE</h4>
-    <div>
-      <div class="case1 flex center-items justify-center">
-        <h3 class="worktitle">Website re-design case study</br>Coming soon...</h3>
+      <div class="card card-small">
+        <a href="https://debracupitt.github.io/colmaracademy/" target="_blank">
+          <img src="resources/images/colmar-academy.svg" alt="Colmar Academy">
+          <div class="content-overlay"></div>
+          <div class="title">
+            <h3>Colmar Academy</h3>
+          </div>
+        </a>
+      </div>
+      <div class="card card-small">
+        <a href="https://debracupitt.github.io/Tortoiseshell/" target="_blank">
+          <img src="resources/images/optics.svg" alt="Tortoiseshell">
+          <div class="content-overlay"></div>
+          <div class="title">
+            <h3>Tortoiseshell</h3>
+          </div>
+        </a>
+      </div>
+      <div class="card card-small">
+        <a href="https://debracupitt.github.io/secretagent/" target="_blank">
+          <img src="resources/images/secretagent.svg" alt="secretagent">
+          <div class="content-overlay"></div>
+          <div class="title">
+            <h3>Secret Agent</h3>
+          </div>
+        </a>
       </div>
     </div>
+  </div>
+
+  <!--User Experience-->
+  <div>
+    <h4 class="work">USER EXPERIENCE</h4>
+    <!-- <div> -->
+      <div class="card card-big">
+        <a href="https://debracupitt.github.io/secretagent/" target="_blank">
+          <img src="resources/images/carbontrack1.png" alt="secretagent">
+          <div class="content-overlay"></div>
+          <div class="title">
+            <h3>Website re-design case study</br>Coming soon...</h3>
+          </div>
+        </a>
+      </div>
+  </div>
 
   <!--Writing-->
+  <div>
     <h4 class="work">WRITING</h4>
     <div class="flex wrap writing">
       <div class="article">
@@ -149,6 +169,7 @@
           <p>This is my masters thesis - you probably don't want to read it. It's pretty boring. But, if you have a hankering for some Habermas' theory, be my guest!</p>
       </div>
     </div>
+</div>
 </div>
 
 <!--Contact Section-->

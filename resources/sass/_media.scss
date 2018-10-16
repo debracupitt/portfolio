@@ -1,0 +1,214 @@
+/*Media Queries*/
+@media only screen and (min-width: 864px) {
+  /* Tablet 864px + */
+  .mobile {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 863px) and (min-width: 768px) {
+  /* Tablet 863px - 768px */
+  .mobile {
+    display: none;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2,
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  h2 {
+    box-shadow: inset 0 -13px 0 $mgreen;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  .nav a {
+    font-size: 1rem;
+    box-shadow: inset 0 -6px 0 $lgreen;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  .container {
+    padding: 5rem 4rem 1rem 4rem;
+  }
+
+  .container2 {
+    padding: 2rem 4rem 1rem 4rem;
+  }
+
+  .profile-image {
+    width: 45%;
+  }
+
+  .profile {
+    width: 70%;
+  }
+  //
+  // .card-small {
+  //   width: 12rem /*45%*/;
+  //   height: 12rem;
+  //   margin: 1rem auto;
+  // }
+  //
+  // .card-big {
+  //   height: 14rem;
+  // }
+  .article {
+    width: 45%;
+    margin: auto;
+  }
+
+  .writing {
+    align-items: flex-start;
+  }
+
+  .contact {
+    padding-bottom: 4rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  /* Mobile less than 768px */
+  .desktop {
+    display: none;
+  }
+
+  .about-section,
+  header {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: $large;
+    line-height: 2rem;
+    text-align: center;
+    margin-top: 0.7rem;
+  }
+
+  h2 {
+    font-size: $medium;
+    line-height: 1.5rem;
+    width: 28%;
+    margin: auto;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  h4 {
+    text-align: center;
+    margin: auto;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  li div {
+    text-align: center;
+  }
+
+  .nav a {
+    font-size: 1rem;
+    box-shadow: inset 0 -7px 0 $lgreen;
+  }
+
+  .logo img {
+    max-width: 35px;
+  }
+
+  .container {
+    padding: 1rem;
+  }
+
+  .container2 {
+    padding: 1.5rem 2rem 1rem 2rem;
+  }
+
+  header {
+    padding-top: 5rem;
+  }
+
+  .nav {
+    margin-right: 3.5rem;
+  }
+
+  .profile-image {
+    width: 65%;
+    text-align: center;
+  }
+
+  .profile,
+  .work,
+  .contact {
+    width: 80%;
+  }
+
+  /*About*/
+  #about,
+  #work,
+  #contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .about,
+  .history,
+  .contact {
+    margin: auto;
+    align-items: center;
+    padding-top: 0.5rem;
+  }
+
+  .about {
+    width: 85%;
+  }
+
+  .history {
+    width: 70%;
+  }
+
+  .button {
+    margin-bottom: 1.5rem;
+  }
+
+  .history h4 {
+    padding: 1rem 0;
+  }
+
+  .work {
+    padding: 2.5rem 0;
+  }
+
+  .article {
+    width: 80%;
+    margin: auto;
+    padding: 0 0 2rem 0;
+  }
+
+  .mobile {
+    display: inline-block;
+  }
+
+  .contact {
+    padding-bottom: 3rem;
+  }
+}
