@@ -418,6 +418,7 @@ header {
 .card-small {
   width: 30%;
   height: 12rem;
+  margin: 1rem auto;
 }
 
 .card-big {
@@ -485,7 +486,6 @@ header {
   .card-small {
     width: 45%;
     height: 12rem;
-    margin: 1rem auto;
   }
   .card-big {
     height: 14rem;
@@ -497,7 +497,6 @@ header {
   .card-big {
     width: 80%;
     height: 11rem;
-    margin: 1rem auto;
   }
 }
 
