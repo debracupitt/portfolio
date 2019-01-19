@@ -112,7 +112,8 @@ body {
 
 ol,
 ul {
-  list-style: none;
+  padding-left: 40px;
+  font-weight: 300;
 }
 
 blockquote,
@@ -193,6 +194,11 @@ body {
 
 img {
   width: 100%;
+  padding: 1rem 0;
+}
+
+.icon {
+  padding: 0;
 }
 
 /* Fonts */
@@ -228,7 +234,8 @@ h2 {
   line-height: 2rem;
   box-shadow: inset 0 -11px 0 #0dab8c;
   display: inline-block;
-  margin: 1rem 0;
+  margin: auto;
+  padding-top: 1rem;
 }
 
 h3 {
@@ -342,6 +349,7 @@ header {
   box-shadow: 0 5px 14px 2px rgba(0, 0, 0, 0.4);
   max-width: 300px;
   filter: grayscale(100%);
+  padding: 0;
 }
 
 .green {
@@ -355,6 +363,11 @@ header {
 
 .history {
   width: 35%;
+}
+
+.history ul {
+  list-style: none;
+  padding-left: 0;
 }
 
 .button {
@@ -415,6 +428,15 @@ header {
   transition: background-color 1s ease;
 }
 
+.italic {
+  font-style: italic;
+  padding: 0 30px;
+}
+
+.case-image {
+  width: 70%;
+}
+
 .card-small {
   width: 30%;
   height: 12rem;
@@ -422,8 +444,8 @@ header {
 }
 
 .card-big {
-  width: 100%;
-  height: 20rem;
+  width: 30%;
+  height: 100%;
 }
 
 .card {
@@ -488,15 +510,19 @@ header {
     height: 12rem;
   }
   .card-big {
-    height: 14rem;
+    height: 100%;
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .card-small,
-  .card-big {
+  .card-small {
     width: 80%;
     height: 11rem;
+  }
+  .card-big {
+    width: 45%;
+    height: 100%;
+    padding: 3px;
   }
 }
 
@@ -530,7 +556,8 @@ header {
     font-size: 1rem;
     box-shadow: inset 0 -6px 0 #11e3ba;
   }
-  p {
+  p,
+  li {
     font-size: 14px;
   }
   header {
@@ -558,6 +585,10 @@ header {
   .contact {
     padding-bottom: 4rem;
   }
+  .case-image {
+    width: 80%;
+    margin: auto;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -578,7 +609,6 @@ header {
   h2 {
     font-size: 1.3rem;
     line-height: 1.5rem;
-    width: 28%;
     margin: auto;
     text-align: center;
   }
@@ -590,7 +620,8 @@ header {
     text-align: center;
     margin: auto;
   }
-  p {
+  p,
+  li {
     font-size: 14px;
   }
   li div {
@@ -605,15 +636,25 @@ header {
   }
   .container {
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
   }
   .container2 {
     padding: 1.5rem 2rem 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .caseheading {
+    padding-top: 5rem;
   }
   header {
     padding-top: 5rem;
   }
   .nav {
     margin-right: 3.5rem;
+  }
+  nav {
+    padding-left: 1rem;
   }
   .profile-image {
     width: 65%;
@@ -664,6 +705,9 @@ header {
   }
   .contact {
     padding-bottom: 3rem;
+  }
+  .case-image {
+    width: 100%;
   }
 }
 

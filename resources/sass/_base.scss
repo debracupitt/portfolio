@@ -110,7 +110,8 @@ body {
 }
 ol,
 ul {
-  list-style: none;
+  padding-left: 40px;
+  font-weight: 300;
 }
 blockquote,
 q {
@@ -189,6 +190,11 @@ body {
 
 img {
   width: 100%;
+  padding: 1rem 0;
+}
+
+.icon {
+  padding: 0;
 }
 
 /* Fonts */
@@ -224,7 +230,9 @@ h2 {
   line-height: 2rem;
   box-shadow: inset 0 -11px 0 $mgreen;
   display: inline-block;
-  margin: 1rem 0;
+  // margin: 1rem 0;
+  margin: auto;
+  padding-top: 1rem;
 }
 
 h3 {
@@ -339,6 +347,7 @@ header {
   box-shadow: 0 5px 14px 2px rgba($black, 0.4);
   max-width: 300px;
   filter: grayscale(100%);
+  padding: 0;
 }
 
 .green {
@@ -353,6 +362,10 @@ header {
 
 .history {
   width: 35%;
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
 }
 
 .button {
@@ -423,4 +436,13 @@ header {
 .contact a:hover {
   background-color: $lgreen;
   transition: background-color 1s ease;
+}
+
+.italic {
+  font-style: italic;
+  padding: 0 30px;
+}
+
+.case-image {
+  width: 70%;
 }
