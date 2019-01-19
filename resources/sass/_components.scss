@@ -9,6 +9,11 @@
   height: 100%;
 }
 
+.case-img {
+  padding: 5px 50px;
+  width: 80%;
+}
+
 .card {
   position: relative;
   box-shadow: 0 5px 14px 2px rgba($black, 0.4);
@@ -74,6 +79,11 @@
   .card-big {
     height: 100%;
   }
+
+  .case-img {
+    padding: 3px 40px;
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -86,5 +96,10 @@
     width: 45%;
     height: 100%;
     padding: 3px;
+  }
+
+  .case-img {
+    padding: 3px 20px;
+    width: 80%;
   }
 }

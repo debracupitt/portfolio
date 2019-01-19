@@ -433,10 +433,6 @@ header {
   padding: 0 30px;
 }
 
-.case-image {
-  width: 70%;
-}
-
 .card-small {
   width: 30%;
   height: 12rem;
@@ -446,6 +442,11 @@ header {
 .card-big {
   width: 30%;
   height: 100%;
+}
+
+.case-img {
+  padding: 5px 50px;
+  width: 80%;
 }
 
 .card {
@@ -512,6 +513,10 @@ header {
   .card-big {
     height: 100%;
   }
+  .case-img {
+    padding: 3px 40px;
+    width: 80%;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -523,6 +528,10 @@ header {
     width: 45%;
     height: 100%;
     padding: 3px;
+  }
+  .case-img {
+    padding: 3px 20px;
+    width: 80%;
   }
 }
 
