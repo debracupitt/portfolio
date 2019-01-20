@@ -144,6 +144,11 @@ body {
   max-width: 100%;
 }
 
+iframe {
+  margin: auto;
+  padding: 3rem 0;
+}
+
 ::-moz-selection {
   background: #e19dd0;
 }
