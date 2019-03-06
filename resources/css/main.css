@@ -554,6 +554,95 @@ header {
   opacity: 0;
 }
 
+.popup-background-overlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.28);
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  left: 0;
+}
+
+.popup-box {
+  padding-bottom: 1rem;
+}
+
+.project-popup {
+  display: none;
+  width: 50%;
+  min-height: 40%;
+  background: #e19dd0;
+  position: fixed;
+  top: 30%;
+  left: 25%;
+  z-index: 10;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  box-sizing: border-box;
+  user-select: none;
+  color: #0dab8c;
+  margin-bottom: 65px;
+}
+
+.project-popup h3 {
+  text-align: center;
+  padding: 2rem 0;
+  font-weight: bold;
+  font-family: "Source Serif Pro", serif;
+  font-size: 1.75rem;
+  font-weight: 900;
+}
+
+.project-popup .btn {
+  padding: 10px;
+  width: 100px;
+  text-align: center;
+  display: inline-block;
+  border: none;
+  font-family: "Oxygen", sans-serif;
+  font-weight: 500;
+  font-size: 0.8rem;
+  margin: 10px;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.project-popup .btn:focus {
+  outline: none;
+}
+
+.project-popup .github {
+  background-color: #0dab8c;
+  color: #ffffff;
+}
+
+.project-popup .github:hover {
+  background-color: #11e3ba;
+}
+
+.project-popup .live-site {
+  background-color: #ffffff;
+  color: #0dab8c;
+}
+
+.project-popup .live-site:hover {
+  background-color: #ececec;
+}
+
+.popup-buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.show {
+  display: block;
+}
+
 @media only screen and (max-width: 863px) and (min-width: 768px) {
   .card-small {
     width: 45%;
