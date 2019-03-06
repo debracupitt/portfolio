@@ -1,3 +1,7 @@
+.heading-wrapper {
+  padding: 2rem 0;
+}
+
 .card-small {
   width: 30%;
   height: 12rem;
@@ -10,8 +14,36 @@
 }
 
 .case-img {
-  padding: 5px 50px;
+  padding: 30px 0;
   width: 80%;
+  margin: auto;
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 30px 0;
+  img {
+    width: 50%;
+    height: 100%;
+    padding: 5px;
+  }
+}
+
+.app-image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 30px 0;
+  img {
+    width: 28%;
+    height: 100%;
+    padding: 10px;
+  }
 }
 
 .card {
@@ -81,7 +113,7 @@
   }
 
   .case-img {
-    padding: 3px 40px;
+    padding: 20px 40px;
     width: 80%;
   }
 }
@@ -99,7 +131,13 @@
   }
 
   .case-img {
-    padding: 3px 20px;
+    padding: 10px 20px;
     width: 80%;
+  }
+
+  .app-image-grid {
+    img {
+      width: 40%;
+    }
   }
 }
